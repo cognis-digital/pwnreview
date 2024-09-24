@@ -42,3 +42,4 @@
 2024-08-09T17:39:09  chore: IRONCLAD hardening pass
 2024-08-18T12:56:16  refactor(core): add pagination to large reports
 2024-09-15T19:13:23  perf: micro-optimization
+2024-09-24T14:30:30  fix(format): wire the MCP tool schema
