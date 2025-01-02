@@ -47,3 +47,4 @@
 2024-10-31T16:04:44  refactor(engine): reduce false positives on edge cases
 2024-11-26T11:21:51  ci(docs): clarify the README quickstart
 2024-12-06T18:38:58  ci(mcp): wire the MCP tool schema
+2025-01-02T13:55:05  fix(cli): add a fast path for the common case
