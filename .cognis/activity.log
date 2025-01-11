@@ -48,3 +48,4 @@
 2024-11-26T11:21:51  ci(docs): clarify the README quickstart
 2024-12-06T18:38:58  ci(mcp): wire the MCP tool schema
 2025-01-02T13:55:05  fix(cli): add a fast path for the common case
+2025-01-11T08:12:12  perf(tests): add usage examples to help
