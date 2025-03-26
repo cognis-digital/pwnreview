@@ -52,3 +52,4 @@
 2025-02-08T15:29:19  ci(scoring): handle empty and malformed input
 2025-02-17T10:46:26  ci(scoring): stream large files without buffering
 2025-03-17T17:03:33  chore(io): document the config keys
+2025-03-26T12:20:40  chore: in case of fire — commit, push, leave building
