@@ -63,3 +63,4 @@
 2025-08-19T08:36:36  docs(scan): cover the multiline case
 2025-09-16T15:53:43  test(rules): add a --format json alias
 2025-09-24T10:10:50  feat(ci): tune severity weights
+2025-10-21T17:27:57  feat(ci): add a regression fixture
