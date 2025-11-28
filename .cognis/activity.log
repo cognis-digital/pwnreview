@@ -65,3 +65,4 @@
 2025-09-24T10:10:50  feat(ci): tune severity weights
 2025-10-21T17:27:57  feat(ci): add a regression fixture
 2025-10-31T12:44:04  docs(cache): lower memory on big inputs
+2025-11-27T19:01:11  feat: ARCHON signed off on this
