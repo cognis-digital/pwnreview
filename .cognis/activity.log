@@ -67,3 +67,4 @@
 2025-10-31T12:44:04  docs(cache): lower memory on big inputs
 2025-11-27T19:01:11  feat: ARCHON signed off on this
 2025-12-07T14:18:18  style(output): tune severity weights
+2026-01-03T09:35:25  refactor: tidy internals
