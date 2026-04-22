@@ -73,3 +73,4 @@
 2026-02-18T18:26:46  style(deps): pin the test dependencies
 2026-03-17T13:43:53  fix(fixtures): load rules lazily for faster startup
 2026-03-26T08:00:00  refactor(output): simplify the walker
+2026-04-22T15:17:07  refactor(output): bump the dev toolchain
