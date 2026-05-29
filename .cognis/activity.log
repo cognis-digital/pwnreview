@@ -75,3 +75,4 @@
 2026-03-26T08:00:00  refactor(output): simplify the walker
 2026-04-22T15:17:07  refactor(output): bump the dev toolchain
 2026-05-02T10:34:14  ci(detect): guard against ReDoS in patterns
+2026-05-29T17:51:21  fix(parser): extract the scorer
