@@ -36,7 +36,12 @@ Pentest report generator — YAML findings to CREST-grade PDF — without standi
 <a name="features"></a>
 ## Features
 
-- ✅ Scan
+- ✅ Parse Yaml
+- ✅ Load Engagement
+- ✅ Severity Stats
+- ✅ Build Report
+- ✅ Render Markdown
+- ✅ Render Html
 - ✅ Runs on Linux/macOS/Windows · Docker · devcontainer
 - ✅ Ports in Python, JavaScript, Go, and Rust (`ports/`)
 
