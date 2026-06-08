@@ -1,0 +1,58 @@
+client: Acme Retail Ltd
+title: External Web Application Penetration Test
+consultant: J. Doe, CREST CRT
+date: 2026-06-08
+scope:
+  - https://shop.acme.example
+  - https://api.acme.example
+
+findings:
+  - id: PWN-001
+    title: SQL Injection in product search
+    severity: critical
+    cvss: 9.8
+    affected:
+      - https://shop.acme.example/search?q=
+    description: |
+      The product search endpoint concatenates the 'q' parameter directly
+      into a SQL query. A boolean-based blind injection was confirmed using
+      the payload q=widget' AND 1=1-- .
+    impact: |
+      Full read access to the backend database, including customer PII and
+      hashed credentials. Potential for authentication bypass.
+    remediation: |
+      Use parameterised queries / prepared statements. Apply input
+      validation and least-privilege DB accounts.
+    references:
+      - https://owasp.org/Top10/A03_2021-Injection/
+      - CWE-89
+
+  - id: PWN-002
+    title: Multi-factor authentication not enforced
+    severity: high
+    cvss: 7.4
+    affected:
+      - https://shop.acme.example/login
+    description: Administrative accounts authenticate with a password only.
+    impact: Credential stuffing or phishing yields full admin takeover.
+    remediation: Enforce TOTP/WebAuthn MFA for all privileged accounts.
+    references:
+      - https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/
+
+  - id: PWN-003
+    title: Verbose application error messages
+    severity: medium
+    affected:
+      - https://api.acme.example
+    description: Stack traces are returned to clients on unhandled exceptions.
+    impact: Leaks framework versions and internal file paths aiding attackers.
+    remediation: Return generic error pages; log details server-side only.
+
+  - id: PWN-004
+    title: Missing HSTS header
+    severity: low
+    affected:
+      - https://shop.acme.example
+    description: Responses lack the Strict-Transport-Security header.
+    impact: Users are exposed to SSL-stripping downgrade attacks.
+    remediation: Add 'Strict-Transport-Security: max-age=63072000; includeSubDomains'.
