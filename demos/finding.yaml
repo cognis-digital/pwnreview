@@ -1,0 +1,5 @@
+title: SQLi in /search
+severity: high
+cvss:
+evidence:
+remediation:

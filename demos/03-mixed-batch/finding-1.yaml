@@ -1,0 +1,5 @@
+title: XSS
+severity: medium
+cvss: AV:N/AC:L/Au:N/C:N/I:P/A:N
+evidence: 
+remediation: Escape output.

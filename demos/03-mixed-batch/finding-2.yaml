@@ -1,0 +1,5 @@
+title: Verbose error
+severity: low
+cvss: AV:N/AC:L/Au:N/C:P/I:N/A:N
+evidence: error trace shown in screenshot
+remediation: Strip stack traces in prod.

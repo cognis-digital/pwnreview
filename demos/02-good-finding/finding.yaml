@@ -1,0 +1,11 @@
+title: Blind SQLi in /api/v1/search?q=
+severity: critical
+cvss: AV:N/AC:L/Au:N/C:C/I:C/A:C (9.8)
+evidence: |
+  curl 'https://target/api/v1/search?q=1%27%20OR%20SLEEP(5)--'
+  Response time: 5.2s (baseline 0.1s)
+  See screenshot: evidence/sqli-timing.png
+remediation: |
+  Replace raw query construction with prepared statements.
+  Apply input validation at API gateway.
+  Patch within 24h per IR plan.
