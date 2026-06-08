@@ -1,0 +1,10 @@
+{
+  "name": "@cognis/pwnreview",
+  "version": "0.2.0",
+  "description": "JavaScript port of pwnreview (Cognis Neural Suite)",
+  "bin": {
+    "pwnreview": "index.js"
+  },
+  "license": "LicenseRef-COCL-1.0",
+  "type": "module"
+}
