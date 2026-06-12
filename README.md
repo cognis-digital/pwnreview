@@ -16,7 +16,7 @@
 </div>
 
 ```bash
-pip install cognis-pwnreview
+pip install "git+https://github.com/cognis-digital/pwnreview.git"
 pwnreview scan .            # → prioritized findings in seconds
 ```
 
@@ -51,7 +51,7 @@ Pentest report generator — YAML findings to CREST-grade PDF — without standi
 ## Quick start
 
 ```bash
-pip install cognis-pwnreview
+pip install "git+https://github.com/cognis-digital/pwnreview.git"
 pwnreview --version
 pwnreview scan .                       # scan current project
 pwnreview scan . --format json         # machine-readable
