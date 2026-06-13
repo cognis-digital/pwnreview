@@ -20,6 +20,12 @@ pip install "git+https://github.com/cognis-digital/pwnreview.git"
 pwnreview scan .            # → prioritized findings in seconds
 ```
 
+<!-- cognis:layman:start -->
+## What is this?
+
+pwnreview turns a simple text file describing security vulnerabilities into a polished report — the kind a penetration tester hands a client at the end of an engagement. You write your findings in a structured YAML file (client name, what was found, how severe, how to fix it), and pwnreview produces a sorted summary in your choice of readable table, JSON, or full HTML document. It is built for security professionals who want a fast, scriptable way to produce consistent, standards-aligned reports without heavyweight report-writing software or an internet connection.
+<!-- cognis:layman:end -->
+
 ## Contents
 
 - [Why pwnreview?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
@@ -48,6 +54,42 @@ Pentest report generator — YAML findings to CREST-grade PDF — without standi
 <div align="right"><a href="#top">↑ back to top</a></div>
 
 <a name="quick-start"></a>
+<!-- cognis:install:start -->
+## Install
+
+`pwnreview` is source-available (not published to PyPI) — every method below installs
+straight from GitHub. Pick whichever you prefer; the one-line scripts auto-detect
+the best tool available on your machine.
+
+**One-liner (Linux / macOS):**
+```sh
+curl -fsSL https://raw.githubusercontent.com/cognis-digital/pwnreview/HEAD/install.sh | sh
+```
+
+**One-liner (Windows PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/cognis-digital/pwnreview/HEAD/install.ps1 | iex
+```
+
+**Or install manually — any one of:**
+```sh
+pipx install "git+https://github.com/cognis-digital/pwnreview.git"     # isolated (recommended)
+uv tool install "git+https://github.com/cognis-digital/pwnreview.git"  # uv
+pip install "git+https://github.com/cognis-digital/pwnreview.git"      # pip
+```
+
+**From source:**
+```sh
+git clone https://github.com/cognis-digital/pwnreview.git
+cd pwnreview && pip install .
+```
+
+Then run:
+```sh
+pwnreview --help
+```
+<!-- cognis:install:end -->
+
 ## Quick start
 
 ```bash
