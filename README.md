@@ -20,6 +20,40 @@ pip install cognis-pwnreview
 pwnreview scan .            # → prioritized findings in seconds
 ```
 
+## Usage — step by step
+
+1. **Install** (Python 3.9+):
+
+   ```bash
+   pip install pwnreview            # or: pipx install pwnreview
+   ```
+
+2. **Validate an engagement file** before rendering (use `-` for stdin):
+
+   ```bash
+   pwnreview validate engagement.yaml
+   ```
+
+3. **Generate the report.** Render to HTML or Markdown and write it to a file:
+
+   ```bash
+   pwnreview generate engagement.yaml --render markdown -o report.md
+   ```
+
+4. **Get machine-readable output** of the validated/summarized engagement:
+
+   ```bash
+   pwnreview generate engagement.yaml --format json > engagement.json
+   ```
+
+5. **Read the result.** `validate` reports schema/completeness problems and exits non-zero on failure; `generate` summarizes findings and (with `--render`) emits a shareable HTML/Markdown document.
+
+6. **Wire it into CI.** Validate on every change, then publish the rendered report:
+
+   ```bash
+   pwnreview validate engagement.yaml && pwnreview generate engagement.yaml --render html -o site/report.html
+   ```
+
 ## Contents
 
 - [Why pwnreview?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
